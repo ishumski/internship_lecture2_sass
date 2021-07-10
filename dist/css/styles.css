@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: pink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2.5em;
+}
+
+.header__box {
+  display: flex;
+  align-items: center;
+}
+
+.header__box-logo {
+  border: 0.1em solid black;
+  padding: 1.8em;
+  border-radius: 50%;
+}
+
+.header__box-title {
+  border: 0.1em solid black;
+  padding: 0.3em 2.5em;
+  margin-left: 1.5em;
+}
+
+.header__registration {
+  padding: 0.8em 5em;
+  border: 0.1em solid black;
+}
