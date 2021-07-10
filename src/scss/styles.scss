@@ -9,33 +9,35 @@ body {
   margin: 0 auto;
 }
 .header {
-  background-color: pink;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 1em 2.5em;
+  background: linear-gradient(90deg, #f598a8, #f6edb2);
 
   &__box {
     display: flex;
     align-items: center;
     &-logo {
-      border: 0.1em solid black;
       padding: 1.8em;
       border-radius: 50%;
+      border: 0.1em solid #f18597;
+      box-shadow: 0px 1px 5px black;
     }
     &-title {
-      border: 0.1em solid black;
       padding: 0.3em 2.5em;
       margin-left: 1.5em;
+      box-shadow: 0px 1px 5px black;
     }
   }
   &__registration {
     padding: 0.8em 5em;
-    border: 0.1em solid black;
+    border: 0.1em solid rgb(230, 156, 156);
+    box-shadow: 0px 1px 5px rgb(230, 156, 156);
   }
 }
 .main {
-  height: 100vh;
   display: flex;
 
   &__sidebar {
@@ -43,18 +45,20 @@ body {
     flex-direction: column;
     justify-content: space-between;
     flex: 0.3;
-    background-color: yellow;
+    background-color: rgb(190, 255, 252);
 
     &-list li {
+      height: 5vh;
+      margin: 1em 1.5em;
       list-style-type: none;
-      border: 0.1em solid blue;
-      margin: 0.5em;
-      padding: 0.5em;
+      background: linear-gradient(90deg, #ee5c87, #f1a4b5, #d587b3);
+      box-shadow: 4px 7px 6px rgb(230, 156, 156);
     }
     &-bottom {
-      border: 0.1em solid blue;
+      height: 4vh;
       margin: 1em 2.5em;
-      padding: 0.5em;
+      background: linear-gradient(90deg, #ee5c87, #f1a4b5, #d587b3);
+      box-shadow: 4px 7px 6px rgb(230, 156, 156);
     }
   }
   &__content {
@@ -77,6 +81,8 @@ body {
         align-items: center;
         background-color: lightblue;
         border-radius: 1.5em;
+        box-shadow: 0px 1px 5px rgb(49, 47, 49);
+
         div {
           width: 10vw;
           height: 3vh;
@@ -93,6 +99,7 @@ body {
         align-items: center;
         background-color: purple;
         border-radius: 1.5em;
+        box-shadow: 0px 1px 20px rgb(125, 206, 206);
         div {
           width: 10vw;
           height: 3vh;
@@ -111,14 +118,18 @@ body {
     &-section {
       display: flex;
       justify-content: space-between;
-      background-color: lightgreen;
-      border-radius: 2em;
       padding: 1.5em 3.5em;
+      background-blend-mode: screen;
+      background: linear-gradient(limegreen, transparent), linear-gradient(90deg, skyblue, transparent),
+        linear-gradient(-90deg, coral, transparent);
+      border-radius: 2em;
+
       div {
         height: 20vh;
         width: 13vw;
-        background-color: lightgrey;
+        background-color: rgba(252, 199, 249, 0.993);
         border-radius: 1.5em;
+        box-shadow: 0px 1px 5px rgb(49, 47, 49);
       }
     }
     &-columns {
@@ -144,25 +155,26 @@ body {
   .column {
     height: 22vh;
     width: 11vw;
-    background-color: rgb(226, 251, 255);
     margin: 1em 0em;
+    background-color: rgb(151, 255, 241);
     border-radius: 1em;
+    box-shadow: 0px 1px 5px rgb(49, 47, 49);
   }
   .column-item {
-    background-color: magenta;
+    background-color: rgba(0, 255, 191, 0.747);
     height: 5vh;
     border-radius: 0.5em;
     margin: 1em 0.5em;
   }
 }
-
 .footer {
-  background-color : mediumturquoise;
   padding: 1.5em;
+  background: linear-gradient(90deg, #f598a8, #f6edb2);
   &__info {
     height: 3em;
     width: 15vw;
     background-color: moccasin;
-    border-radius: .5em;
+    border-radius: 0.5em;
+    box-shadow: 0px 1px 5px rgb(85, 84, 19);
   }
 }
