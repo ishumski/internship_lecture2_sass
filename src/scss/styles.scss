@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 * {
   padding: 0;
   margin: 0;
@@ -14,7 +16,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1em 2.5em;
-  background: linear-gradient(90deg, #f598a8, #f6edb2);
+  background: $peach;
 
   &__box {
     display: flex;
@@ -22,159 +24,154 @@ body {
     &-logo {
       padding: 1.8em;
       border-radius: 50%;
-      border: 0.1em solid #f18597;
-      box-shadow: 0px 1px 5px black;
+      border: .1em solid $pink_red;
+      box-shadow: $box_shadow $black;
     }
     &-title {
-      padding: 0.3em 2.5em;
+      padding: .3em 2.5em;
       margin-left: 1.5em;
-      box-shadow: 0px 1px 5px black;
+      box-shadow: $box_shadow $black;
     }
   }
   &__registration {
-    padding: 0.8em 5em;
-    border: 0.1em solid rgb(230, 156, 156);
-    box-shadow: 0px 1px 5px rgb(230, 156, 156);
+    padding: .8em 5em;
+    border: .1em solid $light_pastel;
+    box-shadow: $box_shadow $light_pastel;
   }
 }
 .main {
   display: flex;
-
   &__sidebar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex: 0.3;
-    background-color: rgb(190, 255, 252);
+    background-color: $ligth_blue;
 
     &-list li {
-      height: 5vh;
+      height: 2.5em;
       margin: 1em 1.5em;
       list-style-type: none;
-      background: linear-gradient(90deg, #ee5c87, #f1a4b5, #d587b3);
-      box-shadow: 4px 7px 6px rgb(230, 156, 156);
     }
     &-bottom {
-      height: 4vh;
+      height: 1.9em;
       margin: 1em 2.5em;
-      background: linear-gradient(90deg, #ee5c87, #f1a4b5, #d587b3);
-      box-shadow: 4px 7px 6px rgb(230, 156, 156);
+    }
+    &-list li,
+    &-bottom {
+      background: $light_pink_purple;
+      box-shadow: $box_shadow_light $light_pastel;
     }
   }
   &__content {
     flex: 0.7;
-    background-color: lightblue;
+    background-color: $ligth_blue;
 
     &-top-wrapper {
-      display: flex;
-      justify-content: space-evenly;
-      padding: 1.5em 0em;
+      background-color: $hotpink;
     }
     &-top {
-      background-color: hotpink;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 1.5em 0;
 
       &_left {
-        width: 15vw;
-        height: 35vh;
+        width: 10.35em;
+        height: 16.5em;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: lightblue;
+        background-color: $ligth_blue;
         border-radius: 1.5em;
-        box-shadow: 0px 1px 5px rgb(49, 47, 49);
+        box-shadow: $box_shadow $dark_brown;
 
         div {
-          width: 10vw;
-          height: 3vh;
-          border-radius: 0.2em;
-          background-color: #ffffff;
+          width: 6.88em;
+          height: 1.4em;
+          border-radius: .2em;
+          background-color: $white;
         }
       }
       &_right {
-        width: 15vw;
-        height: 35vh;
+        width: 10.35em;
+        height: 16.5em;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        background-color: purple;
+        background-color: $purple;
         border-radius: 1.5em;
-        box-shadow: 0px 1px 20px rgb(125, 206, 206);
+        box-shadow: $box_shadow_dark $turquoise;
         div {
-          width: 10vw;
-          height: 3vh;
-          margin: 1.5em 0em;
-          border-radius: 0.2em;
-          background-color: #ffffff;
+          width: 6.88em;
+          height: 1.4em;
+          margin: 1.5em 0;
+          border-radius: .2em;
+          background-color: $white;
         }
       }
     }
+    &-bottom-wrapper {
+      background-color: $lightpink;
+    }
     &-bottom {
-      background-color: lightpink;
-      &-wrapper {
         padding: 1.5em;
       }
-    }
     &-section {
       display: flex;
       justify-content: space-between;
-      padding: 1.5em 3.5em;
+      padding: 1.5em 4em;
       background-blend-mode: screen;
-      background: linear-gradient(limegreen, transparent), linear-gradient(90deg, skyblue, transparent),
-        linear-gradient(-90deg, coral, transparent);
+      background: $lime_skyblue_coral;
       border-radius: 2em;
 
       div {
-        height: 20vh;
-        width: 13vw;
-        background-color: rgba(252, 199, 249, 0.993);
+        height: 11.4em;
+        width: 12em;
+        background-color: $light_purple;
         border-radius: 1.5em;
-        box-shadow: 0px 1px 5px rgb(49, 47, 49);
+        box-shadow: $box_shadow $dark_brown;
       }
     }
     &-columns {
       display: flex;
       justify-content: space-evenly;
-      &_left {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-      }
-      &_center {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-      &_right {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-      }
     }
   }
   .column {
-    height: 22vh;
-    width: 11vw;
-    margin: 1em 0em;
-    background-color: rgb(151, 255, 241);
+    height: 12.4em;
+    width: 9.6em;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+    background-color: $turquoise;
     border-radius: 1em;
-    box-shadow: 0px 1px 5px rgb(49, 47, 49);
+    box-shadow: $box_shadow $dark_brown;
+    &.right {
+      justify-content: flex-end;
+    }
+    &.left {
+      justify-content: flex-start;
+    }
+    &.center {
+      justify-content: center;
+    }
   }
   .column-item {
-    background-color: rgba(0, 255, 191, 0.747);
-    height: 5vh;
-    border-radius: 0.5em;
-    margin: 1em 0.5em;
+    background-color: $light_swampy;
+    height: 2.35em;
+    border-radius: .5em;
+    margin: 1em .5em;
   }
 }
 .footer {
   padding: 1.5em;
-  background: linear-gradient(90deg, #f598a8, #f6edb2);
+  background: $peach;
   &__info {
     height: 3em;
-    width: 15vw;
-    background-color: moccasin;
-    border-radius: 0.5em;
-    box-shadow: 0px 1px 5px rgb(85, 84, 19);
+    width: 14.5em;
+    background-color: $moccasin;
+    border-radius: .5em;
+    box-shadow: $box_shadow $dark_brown_yellow;
   }
 }

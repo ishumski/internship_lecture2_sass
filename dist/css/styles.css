@@ -1,3 +1,9 @@
+/*gradients*/
+
+/*colors*/
+
+/*shadows*/
+
 * {
   padding: 0;
   margin: 0;
@@ -28,17 +34,17 @@ body {
   padding: 1.8em;
   border-radius: 50%;
   border: 0.1em solid #f18597;
-  box-shadow: 0px 1px 5px black;
+  box-shadow: 0px 1px 5px #000000;
 }
 
 .header__box-title {
-  padding: 0.3em 2.5em;
+  padding: .3em 2.5em;
   margin-left: 1.5em;
-  box-shadow: 0px 1px 5px black;
+  box-shadow: 0px 1px 5px #000000;
 }
 
 .header__registration {
-  padding: 0.8em 5em;
+  padding: .8em 5em;
   border: 0.1em solid #e69c9c;
   box-shadow: 0px 1px 5px #e69c9c;
 }
@@ -56,93 +62,95 @@ body {
 }
 
 .main__sidebar-list li {
-  height: 5vh;
+  height: 2.5em;
   margin: 1em 1.5em;
   list-style-type: none;
-  background: linear-gradient(90deg, #ee5c87, #f1a4b5, #d587b3);
-  box-shadow: 4px 7px 6px #e69c9c;
 }
 
 .main__sidebar-bottom {
-  height: 4vh;
+  height: 1.9em;
   margin: 1em 2.5em;
+}
+
+.main__sidebar-list li,
+.main__sidebar-bottom {
   background: linear-gradient(90deg, #ee5c87, #f1a4b5, #d587b3);
   box-shadow: 4px 7px 6px #e69c9c;
 }
 
 .main__content {
   flex: 0.7;
-  background-color: lightblue;
+  background-color: #befffc;
 }
 
 .main__content-top-wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 1.5em 0em;
+  background-color: #ff6cb5;
 }
 
 .main__content-top {
-  background-color: hotpink;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.5em 0;
 }
 
 .main__content-top_left {
-  width: 15vw;
-  height: 35vh;
+  width: 10.35em;
+  height: 16.5em;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightblue;
+  background-color: #befffc;
   border-radius: 1.5em;
   box-shadow: 0px 1px 5px #312f31;
 }
 
 .main__content-top_left div {
-  width: 10vw;
-  height: 3vh;
-  border-radius: 0.2em;
+  width: 6.88em;
+  height: 1.4em;
+  border-radius: .2em;
   background-color: #ffffff;
 }
 
 .main__content-top_right {
-  width: 15vw;
-  height: 35vh;
+  width: 10.35em;
+  height: 16.5em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: purple;
   border-radius: 1.5em;
-  box-shadow: 0px 1px 20px #7dcece;
+  box-shadow: 0px 1px 20px #97fff1;
 }
 
 .main__content-top_right div {
-  width: 10vw;
-  height: 3vh;
-  margin: 1.5em 0em;
-  border-radius: 0.2em;
+  width: 6.88em;
+  height: 1.4em;
+  margin: 1.5em 0;
+  border-radius: .2em;
   background-color: #ffffff;
 }
 
-.main__content-bottom {
+.main__content-bottom-wrapper {
   background-color: lightpink;
 }
 
-.main__content-bottom-wrapper {
+.main__content-bottom {
   padding: 1.5em;
 }
 
 .main__content-section {
   display: flex;
   justify-content: space-between;
-  padding: 1.5em 3.5em;
+  padding: 1.5em 4em;
   background-blend-mode: screen;
   background: linear-gradient(limegreen, transparent), linear-gradient(90deg, skyblue, transparent), linear-gradient(-90deg, coral, transparent);
   border-radius: 2em;
 }
 
 .main__content-section div {
-  height: 20vh;
-  width: 13vw;
+  height: 11.4em;
+  width: 12em;
   background-color: rgba(252, 199, 249, 0.993);
   border-radius: 1.5em;
   box-shadow: 0px 1px 5px #312f31;
@@ -153,38 +161,34 @@ body {
   justify-content: space-evenly;
 }
 
-.main__content-columns_left {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.main__content-columns_center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.main__content-columns_right {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
 .main .column {
-  height: 22vh;
-  width: 11vw;
-  margin: 1em 0em;
+  height: 12.4em;
+  width: 9.6em;
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
   background-color: #97fff1;
   border-radius: 1em;
   box-shadow: 0px 1px 5px #312f31;
 }
 
+.main .column.right {
+  justify-content: flex-end;
+}
+
+.main .column.left {
+  justify-content: flex-start;
+}
+
+.main .column.center {
+  justify-content: center;
+}
+
 .main .column-item {
   background-color: rgba(0, 255, 191, 0.747);
-  height: 5vh;
-  border-radius: 0.5em;
-  margin: 1em 0.5em;
+  height: 2.35em;
+  border-radius: .5em;
+  margin: 1em .5em;
 }
 
 .footer {
@@ -194,8 +198,8 @@ body {
 
 .footer__info {
   height: 3em;
-  width: 15vw;
+  width: 14.5em;
   background-color: moccasin;
-  border-radius: 0.5em;
+  border-radius: .5em;
   box-shadow: 0px 1px 5px #555413;
 }
