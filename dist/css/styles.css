@@ -177,3 +177,15 @@ body {
   border-radius: 0.5em;
   margin: 1em 0.5em;
 }
+
+.footer {
+  background-color: mediumturquoise;
+  padding: 1.5em;
+}
+
+.footer__info {
+  height: 3em;
+  width: 15vw;
+  background-color: moccasin;
+  border-radius: .5em;
+}
